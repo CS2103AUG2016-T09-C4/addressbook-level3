@@ -62,6 +62,13 @@ public class UniqueTagList implements Iterable<Tag> {
     public UniqueTagList(Set<Tag> tags) {
         internalList.addAll(tags);
     }
+    
+    /*
+     * Returns the list of tags.
+     */
+    public List<Tag> getListOfTags(){
+    	return internalList;
+    }
 
     /**
      * Constructs a shallow copy of the given tag list.
